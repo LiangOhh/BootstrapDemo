@@ -1,0 +1,164 @@
+@media screen and(min-width:1280px) {
+    .container {
+        width: 1280px;
+        background-color: red;
+    }
+}
+
+header {
+    padding-left: 0 !important;
+}
+
+.container .logo {
+    background-color: #002FA7;
+}
+
+.container .logo img {
+    /* width: 100%; */
+    display: block;
+    max-width: 100%;
+    /* 居中 */
+    margin: 0 auto;
+}
+/* 超小屏幕 */
+.container .logo span{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    color: red;
+    font-size: 18px;
+    /* 文字居中!!! */
+    text-align: center;
+}
+/* @media screen and(max-width:991px) {
+    .nav li{
+float: left;
+width: 20%;
+    }
+} */
+@media screen and (max-width: 991px) {
+    .nav li {
+        float: left;
+        width: 20%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .nav li a{
+        font-size: 12px;
+        /* padding-left: 7px; */
+        /* padding: 0; */
+    }
+    .pics li:nth-child(1){
+width: 100% !important;
+margin-top: 10px;
+    }
+}
+a {
+    text-decoration: none;
+    color: #100e0e;
+}
+
+a:hover {
+    color: red;
+}
+
+.nav {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container li {
+    list-style: none;
+}
+
+.nav a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    line-height: 50px;
+}
+
+.nav a:hover {
+    background-color: #fff;
+    color: red;
+}
+
+.nav a::before {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.pics li {
+    float: left;
+    width: 25%;
+    height: 125px;  
+    padding-right: 10px;  
+   padding-bottom: 10px;
+}
+
+/* 设置第一个:nth-child(1) */
+.pics li:nth-child(1) {
+    /* background-color: pink; */
+    width: 50%;
+    height: 250px;
+}
+
+.pics li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    /* background-color: blanchedalmond; */
+}
+.pics li a img{
+    width: 100%;
+    height: 100%;
+    
+}
+.pics li a p {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: rgb(0, 0, 0,.5);
+   width: 100%;
+   height: 40px;
+   color: #fff;
+   font-size: 12px;
+   margin: 0;
+}
+.pics li:nth-child(1) p{
+    font-size: 20px;
+}
+.publish{
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.publish .row span{
+    font-size: 12px;
+}
+.publish .row img{
+   width: 100%;
+   height: 1005;
+}
+.business img{
+    width: 100%;
+}
+.message{
+    display: block;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+    border: 1px solid #ccc;
+}
+.btn1{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
